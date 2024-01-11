@@ -1,1 +1,6 @@
+.zoomedIn {
+  transform: scale(1.2
+  ); /* Zooms in the video by 110% */
+  transform-origin: center; /* Ensures the zoom centers on the middle of the video */
+}
 
