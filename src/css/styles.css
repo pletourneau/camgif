@@ -8,11 +8,31 @@ canvas {
   display: none; /* This hides the canvas elements */
 }
 
-body {
+#preview {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#capture-button {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#gifWindow {
+  background-image: url("../assets/theater-medium.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+/* body {
   background-image: url("../assets/theater-medium.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
   background-attachment: fixed;
-}
+} */
 
