@@ -108,10 +108,30 @@ function createGif() {
   gif.render();
 }
 
+// Function to capture from cameras with a delay for bullet time effect
+// function captureBulletTime() {
+//   const delays = [0, 100, 200]; // Delays in milliseconds
+//   const canvasIds = ["canvas1", "canvas2", "canvas3"];
+//   const videoIds = ["camera1", "camera2", "camera3"];
+
+//   videoIds.forEach((videoId, index) => {
+//     setTimeout(() => {
+//       captureCamera(videoId, canvasIds[index]);
+//     }, delays[index]);
+//   });
+
+//   // Delay GIF creation to ensure all captures are complete
+//   setTimeout(createGif, delays[delays.length - 1] + 100); // Adjust the delay as needed
+// }
+
 // Add event listener to your capture button to create the GIF
 document.getElementById("capture").addEventListener("click", function () {
   createGif();
 });
+
+// document
+//   .getElementById("captureBulletTime")
+//   .addEventListener("click", captureBulletTime);
 
 // Initialize the cameras
 initCameras();
