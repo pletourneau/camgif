@@ -3,7 +3,6 @@ function initCameras() {
   navigator.mediaDevices
     .getUserMedia({ video: true })
     .then((stream) => {
-      // Stop the stream as we just need permission to list devices
       stream.getTracks().forEach((track) => track.stop());
       listDevices();
     })
@@ -59,22 +58,15 @@ function captureCamera(videoElementId, canvasElementId) {
   context.drawImage(video, 0, 0, canvas.width, canvas.height);
 }
 
-// Event listener for the zoom in button
-// document.getElementById("zoomInButton").addEventListener("click", function () {
-//   var videoElement = document.getElementById("camera1");
-//   videoElement.classList.toggle("zoomedIn");
-// });
-
 // Event listener for the capture button
 document.getElementById("capture").addEventListener("click", function () {
   captureCamera("camera1", "canvas1");
   captureCamera("camera2", "canvas2");
-  captureCamera("camera3", "canvas3"); // Capture for the third camera
+  captureCamera("camera3", "canvas3");
 });
 
 // Function to create GIF from canvas elements
 function createGif() {
-  console.log("Starting GIF creation...");
   const gif = new GIF({
     workers: 2,
     quality: 10,
@@ -92,7 +84,6 @@ function createGif() {
 
   // Once the GIF is rendered, do something with it
   gif.on("finished", function (blob) {
-    console.log("GIF creation finished.");
     // For example, display the GIF in an image element
     const imgElement = document.getElementById("gifDisplay");
     imgElement.src = URL.createObjectURL(blob);

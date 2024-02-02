@@ -4,3 +4,7 @@
   transform-origin: center; /* Ensures the zoom centers on the middle of the video */
 }
 
+canvas {
+  display: none; /* This hides the canvas elements */
+}
+
