@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <video id="camera1" width="320" height="240" autoplay></video>
-    <video id="camera2" width="320" height="240" autoplay></video>
-    <video id="camera3" width="320" height="240" autoplay></video>
-    <!-- Added third camera -->
-    <!-- <button id="zoomInButton">Zoom In</button> -->
-    <button id="capture">Capture Photos</button>
+    <div id="preview">
+      <video id="camera1" width="320" height="240" autoplay></video>
+      <video id="camera2" width="320" height="240" autoplay></video>
+      <video id="camera3" width="320" height="240" autoplay></video>
+    </div>
+    <div id="capture-button"><button id="capture">Capture Photos</button></div>
+
     <!-- <button id="captureBulletTime">Capture Bullet Time Photos</button> -->
 
     <canvas id="canvas1" width="640" height="480"></canvas>

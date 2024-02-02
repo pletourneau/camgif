@@ -8,3 +8,11 @@ canvas {
   display: none; /* This hides the canvas elements */
 }
 
+body {
+  background-image: url("../assets/theater-medium.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+}
+
