@@ -25,15 +25,15 @@ function listDevices() {
       // Replace the placeholders with actual device IDs
       getCameraStream(
         "camera1",
-        "05babc06839fbf6ea94fb63b0745fa86d8de0b5af437bba1449ab6ceea64b2c1"
+        "98beae500dbe08a5179ae8b1c68a9b15ec9ad4dc42f1d8d08c547ccefca5ee98"
       );
       getCameraStream(
         "camera2",
-        "37224b2fc0fe1619124c93955d854ca2869b52ab0e214be7ae5e8021d0f67288"
+        "c4dd208261649697580e27da3a4b6960754b87c800ee583e0d18b0e7e40afd20"
       );
       getCameraStream(
         "camera3",
-        "774172ba3eca115de25e022206c0f7da29abe6ec91952d5ac2c14b865cdc4eb1"
+        "c3d1ed7ed4f820251844385eec8bbe4b6e96f761249316e707642000988abaf6"
       );
     })
     .catch((err) => console.error("Error listing devices: ", err));
